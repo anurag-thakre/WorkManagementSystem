@@ -21,7 +21,7 @@ For information on how to setup the postgres database for the application and cr
  
  Refer : https://www.postgresql.org/docs/9.3/tutorial-install.html
  
-Install any IDE to connect to postgres like (Datagrip). Create the database called workdistribution. Create database with following query. 
+Create the database called workmanagementsystem. Create database with following query. 
 
      create database workmanagementsystem;
      create schema public;
@@ -55,19 +55,19 @@ Execute following command to run the application by going in the directory.
 		}
 		Response: 
 		{
-    "taskId": 16,
-    "agentId": 8,
-    "skillIds": [
-        1,
-        2
-    ],
-    "skillNames": [
-        "Java",
-        "UI"
-    ],
-    "priority": "low",
-    "taskStatus": "Not_Started"
-}
+		    "taskId": 16,
+		    "agentId": 8,
+		    "skillIds": [
+			1,
+			2
+		    ],
+		    "skillNames": [
+			"Java",
+			"UI"
+		    ],
+		    "priority": "low",
+		    "taskStatus": "Not_Started"
+		}
 
 	2) Update Task status to Completed
 		Endpoint : http://localhost:8080/workmanagement_service/tasks/{taskId}/status/Completed
